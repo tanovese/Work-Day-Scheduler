@@ -65,12 +65,9 @@ $('#currentDay').text(today.format('MMM D, YYYY'));
 var time = dayjs();
 $('#currentTime').text(today.format('h:mm A'));
 
-// var blockTime= $(".hour");
-
 var saveButton = $(".saveBtn");
 // var timeBlock= $(".time-block");
-var input = $(".description").val;
-console.log(input);
+
 
 function timeCompare() {
   const currentTime = moment().format('HH');
@@ -92,22 +89,18 @@ function timeCompare() {
 
 timeCompare();
 
-// $(function timeCompare() {
-//   if(blockTime === time);
-//     timeBlock.classList.add("present");
-//   if(blockTime < time);
-//     timeBlock.classList.add("past");
-//   if(blockTime > time);
-//     timeBlock.classList.add("future");
-
-// });
-
 saveButton.on("click", function () {
   var userInput = $(this).siblings(".description").val();
   var id= $(this).parent().attr("id");
   console.log(userInput)
   console.log(id);
   localStorage.setItem(id, JSON.stringify(userInput));
+});
+
+$('.time-block').each(function() {
+  const id = $(this).attr('id');
+  const input = localStorage.getItem(userInput);
+  $(this).children('.description').val(value);
 });
 
   
@@ -129,11 +122,3 @@ saveButton.on("click", function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-
-
-
-// $(function storeInput() {
-//   localStorage.setItem("userInput", input
-
-
-// });
