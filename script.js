@@ -71,8 +71,6 @@ var saveButton = $(".saveBtn");
 // var timeBlock= $(".time-block");
 var input = $(".description").val;
 console.log(input);
-console.log(input[1].val);
-
 
 function timeCompare() {
   const currentTime = moment().format('HH');
@@ -81,15 +79,15 @@ function timeCompare() {
     const blockTime= parseInt(this.id);
   console.log(blockTime);
   console.log(currentTime);
-    if(blockTime > time) {
+    if(blockTime > currentTime) {
       $(this).classList.add("future");
-    } else if (blockTime === time) {
+    } else if (blockTime === currentTime) {
       $(this).classList.add("present");
     } else {
       $(this).classList.add("past");
     }
-  })
-
+  });
+  
 }
 
 timeCompare();
@@ -106,7 +104,7 @@ timeCompare();
 // });
 
 saveButton.on("click", function runInput() {
-  localStorage.setItem("9", JSON.stringify(input.value));
+  localStorage.setItem("input", JSON.stringify(input.value));
 });
 
   // TODO: Add a listener for click events on the save button. This code should
