@@ -87,11 +87,10 @@ function timeCompare() {
       $(this).classList.add("past");
     }
   });
-  
+
 }
 
 timeCompare();
-
 
 // $(function timeCompare() {
 //   if(blockTime === time);
@@ -103,13 +102,13 @@ timeCompare();
 
 // });
 
-saveButton.on("click", function runInput() {
-  localStorage.setItem("input", JSON.stringify(input.value));
+saveButton.on("click", function () {
+  var userInput = $(this).siblings(".description").val();
+  var id= $(this).parent().attr("id");
+  console.log(userInput)
+  console.log(id);
+  localStorage.setItem(id, JSON.stringify(userInput));
 });
-
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. 
 
   
     // HINT: What does `this` reference in the click listener
