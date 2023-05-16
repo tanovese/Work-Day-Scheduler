@@ -2,7 +2,7 @@
 
 ## Description
 
-The Work Day Scheduler is a great scheduling tool. The time blocks run from 9AM to 5PM, are color-coded, providing a user friendly experience and design. The hours in the past will be grey, the present hour will be red, and future hours will show up in green. Plans for each hour can be entered and safely saved.
+The Work Day Scheduler is a great scheduling tool. The time blocks running from 9AM to 5PM, are color-coded, providing a user friendly experience and design. The hours in the past will be grey, the present hour will be red, and future hours will show up in green. Plans for each hour can be entered and safely saved.
 
 ## Installation
 
