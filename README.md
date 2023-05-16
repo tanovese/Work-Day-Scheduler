@@ -16,7 +16,7 @@ Users can enter their plans for the day in the text area and click save. Their e
 
 ![](./Images/Screenshot%202023-05-16%20144410.png)
 
-Link: 
+Link: https://tanovese.github.io/Work-Day-Scheduler/
 
 ## Credits
 
